@@ -1,0 +1,4 @@
+---
+
+- src: https://github.com/ansible-community/ansible-vault.git
+  name: hashicorp_vault

@@ -1,0 +1,9 @@
+---
+
+vault_install_hashi_repo: true
+vault_bin_path: /usr/bin
+vault_ui: true
+vault_cluster_disable: true
+vault_backend: file
+vault_tls_disable: 1
+vault_iface: enp0s8

@@ -1,0 +1,33 @@
+#!/usr/bin/env ansible-playbook
+---
+
+- name: Provision Hashicorp Vault
+  hosts: vault_instances
+  become: true
+  become_user: root
+
+  vars_files:
+    - vars/main.yml
+  pre_tasks:
+    - name: Install role dependencies
+      ansible.builtin.dnf:
+        name: yum-utils
+        state: present
+
+    - name: Install python libraries
+      pip:
+        name:
+          - python-consul
+          - dnspython
+          - hvac
+      tags:
+        - python
+
+  roles:
+    - role: hashicorp_vault
+      tags: 'vault'
+
+    - role: vault_admin
+      tags: 'vault_admin'
+
+
