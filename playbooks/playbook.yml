@@ -11,17 +11,8 @@
   pre_tasks:
     - name: Install role dependencies
       ansible.builtin.dnf:
-        name: yum-utils
-        state: present
-
-    - name: Install python libraries
-      pip:
         name:
-          - python-consul
-          - dnspython
-          - hvac
-      tags:
-        - python
+          - yum-utils
 
   roles:
     - role: hashicorp_vault
