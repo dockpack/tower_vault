@@ -20,5 +20,3 @@
 
     - role: vault_admin
       tags: 'vault_admin'
-
-
