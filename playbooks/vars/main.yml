@@ -1,6 +1,7 @@
 ---
 
-vault_install_hashi_repo: true
+vault_install_hashi_repo: false
+vault_install_remotely: true
 vault_version: 1.11.2
 vault_bin_path: /usr/bin
 vault_ui: true
