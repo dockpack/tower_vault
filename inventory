@@ -3,6 +3,16 @@ localhost connection=local
 
 [vagrant:children]
 vault_instances
+consul_instances
+
+[consul_instances]
+192.168.56.11
+192.168.56.12
+192.168.56.13
+
+[consul_instances:vars]
+consul_bootstrap_expect=true
+consul_node_role=server
 
 [vault_instances]
 192.168.56.13

@@ -1,0 +1,4 @@
+---
+vault_bin_path: /usr/bin
+consul_bin_path: /usr/bin
+vault_tls_ca_file: consul-agent-ca.pem

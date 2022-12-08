@@ -3,3 +3,5 @@
 roles:
   - src: https://github.com/ansible-community/ansible-vault.git
     name: hashicorp_vault
+  - src: https://github.com/ansible-community/ansible-consul.git
+    name: consul
