@@ -3,7 +3,7 @@ vault_iface: eth1
 vault_backend: raft
 vault_manage_group: true
 vault_manage_user: true
-vault_install_hashi_repo: true
+vault_install_hashi_repo: false
 vault_install_remotely: true
 vault_version: 1.12.2
 vault_ui: true
@@ -11,9 +11,5 @@ vault_cluster_disable: true
 vault_enable_logrotate: true
 vault_domain: consul
 # TLS
-vault_tls_disable: 0
-vault_tls_src_files: files/tls
-
-vault_tls_cert_file: dc1-server-consul-1.pem
-vault_tls_key_file: dc1-server-consul-1-key.pem
+vault_tls_disable: 1
 validate_certs_during_api_reachable_check: false
