@@ -1,22 +1,6 @@
 #!/usr/bin/env ansible-playbook
 ---
 
-- name: Provision Hashicorp Consul
-  hosts: consul_instances
-  become: true
-  become_user: root
-  gather_facts: true
-
-  pre_tasks:
-    - name: Install role dependencies
-      ansible.builtin.dnf:
-        name:
-          - yum-utils
-
-  roles:
-    - role: consul
-      tags: 'consul'
-
 - name: Provision Hashicorp Vault
   hosts: vault_instances
   become: true

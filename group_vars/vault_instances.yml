@@ -1,6 +1,6 @@
 ---
 vault_iface: eth1
-vault_backend: consul
+vault_backend: raft
 vault_manage_group: true
 vault_manage_user: true
 vault_install_hashi_repo: true
